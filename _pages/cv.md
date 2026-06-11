@@ -71,8 +71,8 @@ Selected Projects
 Publications
 ======
 
-* C. Dong, Y. Bai, **J. Zou**, J. Cheng, Y. An, Z. Zhang, Z. Li, S. Lin, S. Zhao, and N. Li, "Flexible capacitive pressure sensor: material, structure, fabrication and application." *Nondestructive Testing and Evaluation*, 2024.
-* Y. An, **J. Zou**, Y. Bai, C. Dong, J. Cheng, and N. Li, "Design and Testing of Flexible Pressure and Temperature Sensing Capacitive Sensors." *2024 IEEE International Instrumentation and Measurement Technology Conference (I2MTC)*, 2024.
+* C. Dong, Y. Bai, **Junfeng Zou**, J. Cheng, Y. An, Z. Zhang, Z. Li, S. Lin, S. Zhao, and N. Li, "Flexible capacitive pressure sensor: material, structure, fabrication and application." *Nondestructive Testing and Evaluation*, 2024.
+* Y. An, **Junfeng Zou**, Y. Bai, C. Dong, J. Cheng, and N. Li, "Design and Testing of Flexible Pressure and Temperature Sensing Capacitive Sensors." *2024 IEEE International Instrumentation and Measurement Technology Conference (I2MTC)*, 2024.
 
 Awards and Honors
 ======

@@ -16,10 +16,8 @@ Research Interests
 
 * Robot planning and control
 * Surgical robotics and robot-assisted endoscopy
-* Visual servoing and model predictive control
-* Embodied learning and vision-language-action models
-* Humanoid locomotion and reinforcement learning
-* Real-time robotic systems and EtherCAT-based motor control
+* Robot learning and embodied intelligence
+* Humanoid robots and real-time robotic systems
 
 Current Work
 ======
