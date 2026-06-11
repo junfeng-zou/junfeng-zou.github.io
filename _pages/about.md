@@ -15,9 +15,8 @@ Research Interests
 ======
 
 * Robot planning and control
-* Surgical robotics and robot-assisted endoscopy
-* Robot learning and embodied intelligence
-* Humanoid robots and real-time robotic systems
+* Robot manipulation and locomotion
+* Embodied intelligence
 
 Current Work
 ======
@@ -32,11 +31,23 @@ Education
 * **M.Phil. in Computer and Information Engineering**, The Chinese University of Hong Kong, Shenzhen, Sep 2025 - expected Jun 2027
 * **B.E. in Robotics**, Northwestern Polytechnical University, Sep 2021 - Jun 2025
 
-Selected Highlights
+Featured Projects
 ======
 
-* Developed a visual servoing system for robotic nasal endoscopy with Dobot CR5, real-time feature tracking, camera calibration, and TCP/IP robot communication.
-* Designed and validated an MPC-based IBVS controller under RCM constraints for robotic endoscope control.
-* Built ROS 2 and EtherCAT-based motor control frameworks for Denali XCR drives, MPK motors, and humanoid robot joint actuation.
-* Trained PPO-based locomotion policies for a 12-DoF humanoid robot in Isaac Gym.
-* Built and deployed an OpenVLA-7B and LoRA-based robotic drink-pouring system for closed-loop manipulation.
+<div class="featured-project-grid">
+  <a class="featured-project-card" href="/portfolio/#vision-guided-robotic-nasal-endoscope-control-and-safety-supervision-system">
+    <img src="/images/projects/endoscope_robotcontrol_featured.jpg" alt="Robotic nasal endoscope control setup">
+    <span class="featured-project-card__title">Robotic Nasal Endoscope</span>
+    <span class="featured-project-card__summary">RCM-constrained MPC and vision-based safety supervision.</span>
+  </a>
+  <a class="featured-project-card" href="/portfolio/#deep-reinforcement-learning-based-locomotion-control-for-a-humanoid-robot">
+    <img src="/images/projects/humanoid_locomotion_thumb.jpg" alt="Humanoid locomotion over rough terrain">
+    <span class="featured-project-card__title">Humanoid Locomotion</span>
+    <span class="featured-project-card__summary">PPO-based locomotion control across complex terrains.</span>
+  </a>
+  <a class="featured-project-card" href="/portfolio/#lora-fine-tuned-openvla-for-robotic-drink-pouring">
+    <img src="/files/projects/pouring_vla_system.png" alt="Robotic drink pouring system">
+    <span class="featured-project-card__title">Robotic Manipulation with VLA</span>
+    <span class="featured-project-card__summary">LoRA-fine-tuned OpenVLA deployed on a real robot.</span>
+  </a>
+</div>

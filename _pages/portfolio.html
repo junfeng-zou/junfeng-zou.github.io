@@ -12,7 +12,7 @@ author_profile: true
   {% if post.published == false %}
     {% continue %}
   {% endif %}
-  <section class="project-entry">
+  <section class="project-entry" id="{{ post.title | slugify }}">
     <h2>{{ post.title }}</h2>
     {{ post.content | markdownify }}
   </section>
