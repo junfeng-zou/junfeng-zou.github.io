@@ -1,152 +1,183 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Junfeng Zou",
+    "label": "M.Phil. Student in Robotics",
+    "email": "junfengzou@link.cuhk.edu.cn",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://junfeng-zou.github.io",
+    "summary": "M.Phil. student in Computer and Information Engineering at The Chinese University of Hong Kong, Shenzhen. Research interests include robot planning and control, surgical robotics, visual servoing, embodied learning, robot manipulation, humanoid locomotion, and real-time robotic systems.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Shenzhen",
+      "countryCode": "China",
+      "region": "Guangdong"
     },
-    "profiles": [
-      {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
-        "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
-      }
-    ]
+    "profiles": []
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Intelligent Healthcare & Autonomous Robotics Lab, CUHK-Shenzhen",
+      "position": "Research Project",
+      "website": "",
+      "startDate": "2025-07",
+      "endDate": "Present",
+      "summary": "Vision-guided robotic nasal endoscope control and safety supervision system.",
+      "highlights": [
+        "Developed a visual servoing system for robotic nasal endoscopy with Dobot CR5, integrating TCP/IP communication, ServoJ control, camera calibration, and real-time feature tracking.",
+        "Designed and validated a hierarchical MPC controller for IBVS under RCM constraints, achieving a mean image-plane tracking error of approximately 60 pixels while maintaining the RCM deviation below 1.6 mm.",
+        "Built endoscopic vision modules for instrument segmentation, distance-state estimation, and directional collision-risk assessment."
+      ]
+    },
+    {
+      "company": "Intelligent Healthcare & Autonomous Robotics Lab, CUHK-Shenzhen",
+      "position": "Engineering Project",
+      "website": "",
+      "startDate": "2025-12",
+      "endDate": "2026-06",
+      "summary": "EtherCAT-based motor control system for da Vinci surgical instruments.",
+      "highlights": [
+        "Built a ROS 2, EtherCAT, and ros2_control-based multi-axis motor control framework for Denali XCR drives and MPK motors.",
+        "Implemented CiA 402 drive control, including fault reset, drive enabling, operation-mode switching, and position/velocity command execution.",
+        "Developed a motor debugging and monitoring interface for real-hardware testing, parameter tuning, and diagnosis."
+      ]
+    },
+    {
+      "company": "Northwestern Polytechnical University",
+      "position": "Undergraduate Thesis",
+      "website": "",
+      "startDate": "2024-12",
+      "endDate": "2025-06",
+      "summary": "Deep reinforcement learning-based locomotion control for a humanoid robot.",
+      "highlights": [
+        "Built a GPU-parallel reinforcement learning environment in Isaac Gym and implemented an Actor-Critic PPO training pipeline for 12-DoF leg control.",
+        "Designed multi-objective reward functions for velocity tracking, posture stability, gait phase regulation, and joint motion.",
+        "Trained and compared locomotion policies on flat, rough, sloped, and stair terrains."
+      ]
+    },
+    {
+      "company": "Adaptive Robotic Controls Lab, The University of Hong Kong",
+      "position": "Visiting Research Project",
+      "website": "",
+      "startDate": "2024-07",
+      "endDate": "2025-01",
+      "summary": "Humanoid robot assembly and EtherCAT-based joint actuation integration.",
+      "highlights": [
+        "Participated in mechanical assembly and electrical integration, including joint actuator installation, motor wiring, and system commissioning.",
+        "Developed and tested an EtherCAT-based multi-joint motor control system, covering slave configuration, drive enabling, cyclic communication, and synchronized motor operation."
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "The Chinese University of Hong Kong, Shenzhen",
+      "area": "M.Phil. in Computer and Information Engineering",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "startDate": "2025-09",
+      "endDate": "Expected 2027-06",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "Northwestern Polytechnical University",
+      "area": "B.E. in Robotics",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
+      "startDate": "2021-09",
+      "endDate": "2025-06",
+      "gpa": "3.69/4.10",
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Programming",
+      "keywords": ["Python", "C/C++", "MATLAB", "Linux"]
+    },
+    {
+      "name": "Robotics and Control",
+      "keywords": ["ROS 2", "EtherCAT", "MPC", "Visual servoing", "Robot manipulation"]
+    },
+    {
+      "name": "Learning and Vision",
+      "keywords": ["PyTorch", "Isaac Gym/Sim", "Reinforcement learning", "OpenCV", "YOLO"]
+    }
+  ],
   "languages": [],
-  "interests": [],
+  "interests": [
+    {
+      "name": "Robotics",
+      "keywords": ["Surgical robotics", "Endoscopic vision", "Depth estimation", "Vision-language-action models", "Robot learning"]
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Flexible capacitive pressure sensor: material, structure, fabrication and application",
+      "publisher": "Nondestructive Testing and Evaluation",
+      "releaseDate": "2024",
+      "website": "",
+      "summary": "C. Dong, Y. Bai, J. Zou, J. Cheng, Y. An, Z. Zhang, Z. Li, S. Lin, S. Zhao, and N. Li."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Design and Testing of Flexible Pressure and Temperature Sensing Capacitive Sensors",
+      "publisher": "2024 IEEE International Instrumentation and Measurement Technology Conference (I2MTC)",
+      "releaseDate": "2024",
+      "website": "",
+      "summary": "Y. An, J. Zou, Y. Bai, C. Dong, J. Cheng, and N. Li."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
+  "presentations": [],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "course": "CSC1006: Artificial Intelligence for Science and Engineering",
+      "institution": "The Chinese University of Hong Kong, Shenzhen",
+      "date": "2026-02",
+      "role": "Teaching Assistant",
+      "description": "Conducted tutorial sessions, answered students' questions, proctored examinations, and graded exam papers."
     }
   ],
   "portfolio": [
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
+      "name": "Vision-Guided Robotic Nasal Endoscope Control and Safety Supervision System",
+      "category": "Surgical Robotics",
+      "date": "2025-07",
       "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "description": "A robot-assisted nasal endoscopy project involving visual servoing, RCM-constrained MPC, endoscopic vision, and real-time safety supervision."
+    },
+    {
+      "name": "EtherCAT-Based Motor Control System for da Vinci Surgical Instruments",
+      "category": "Surgical Robotic Systems",
+      "date": "2025-12",
+      "url": "",
+      "description": "A ROS 2 and EtherCAT-based low-level actuation framework for Denali XCR drives, MPK motors, and surgical instrument control."
+    },
+    {
+      "name": "Deep Reinforcement Learning-Based Locomotion Control for a Humanoid Robot",
+      "category": "Humanoid Locomotion",
+      "date": "2024-12",
+      "url": "",
+      "description": "A PPO-based locomotion control project for the open-source XBot-L humanoid robot in Isaac Gym."
+    },
+    {
+      "name": "Humanoid Robot Assembly and EtherCAT-Based Joint Actuation Integration",
+      "category": "Humanoid Robot Systems",
+      "date": "2024-07",
+      "url": "",
+      "description": "A visiting research project on humanoid robot assembly, electrical integration, and EtherCAT-based multi-joint motor control."
+    },
+    {
+      "name": "LoRA-Fine-Tuned OpenVLA for Robotic Drink Pouring",
+      "category": "Robotic Manipulation",
+      "date": "2026-01",
+      "url": "",
+      "description": "A real-world robotic drink-pouring VLA system based on OpenVLA-7B and LoRA."
+    },
+    {
+      "name": "Multi-Finger Dexterous Hand Assembly and Interactive Control System",
+      "category": "Dexterous Manipulation",
+      "date": "2026-01",
+      "url": "",
+      "description": "A dexterous hand assembly and gesture-interaction system based on DexHand hardware, RP2350 control, MediaPipe, and OpenCV."
     }
   ]
 }

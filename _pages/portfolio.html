@@ -1,14 +1,19 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "Projects"
 permalink: /portfolio/
 author_profile: true
 ---
 
 {% include base_path %}
 
-
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
+{% assign projects = site.portfolio | sort: "order" %}
+{% for post in projects %}
+  {% if post.published == false %}
+    {% continue %}
+  {% endif %}
+  <section class="project-entry">
+    <h2>{{ post.title }}</h2>
+    {{ post.content | markdownify }}
+  </section>
 {% endfor %}
-

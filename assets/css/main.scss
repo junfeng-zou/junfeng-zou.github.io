@@ -1,6 +1,5 @@
 ---
 ---
-
 /*
  * This file controls what is imported from /_sass
  *
@@ -8,36 +7,283 @@
    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
-@import
-    "vendor/breakpoint/breakpoint",
+@import "vendor/breakpoint/breakpoint",
 
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+"themes",
+"theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+"theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
 
-    "include/mixins",
-    "vendor/susy/susy",
+"include/mixins",
+"vendor/susy/susy",
 
-    "layout/reset",
-    "layout/base",
+"layout/reset",
+"layout/base",
 
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
+"include/utilities",
+"layout/tables",
+"layout/buttons",
+"layout/notices",
+"layout/masthead",
+"layout/navigation",
+"layout/footer",
+"syntax",
 
-    "layout/forms",
+"layout/forms",
 
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
+"layout/page",
+"layout/archive",
+"layout/sidebar",
+"layout/json_cv",
 
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
+"vendor/font-awesome/fontawesome",
+"vendor/font-awesome/solid",
+"vendor/font-awesome/brands"
 ;
+
+.author__urls li {
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.project-video-grid {
+  display: grid;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 1.5rem auto;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.project-meta span {
+  border: 1px solid #d8dee4;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  padding: 0.35rem 0.5rem;
+}
+
+.project-meta strong {
+  color: #24292f;
+  margin-right: 0.25rem;
+}
+
+@media (min-width: 56em) {
+  .project-video-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .project-video-grid--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.project-video-frame {
+  margin: 0;
+}
+
+.project-video-crop {
+  aspect-ratio: 4 / 3;
+  background: #000;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.project-video-crop--labeled {
+  position: relative;
+}
+
+.project-video-speed-label {
+  background: rgba(0, 0, 0, 0.68);
+  border-radius: 3px;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  left: 0.5rem;
+  line-height: 1;
+  padding: 0.32rem 0.42rem;
+  position: absolute;
+  top: 0.5rem;
+  z-index: 1;
+}
+
+.project-video-crop video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.project-video-crop img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-video-crop--robot video {
+  object-position: left center;
+}
+
+.project-video-crop--uncropped {
+  aspect-ratio: 16 / 9;
+}
+
+.project-video-crop--uncropped video {
+  object-fit: contain;
+  object-position: center center;
+}
+
+.project-media-layout {
+  display: grid;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 1.5rem auto;
+}
+
+@media (min-width: 56em) {
+  .project-media-layout {
+    align-items: start;
+    grid-template-columns: minmax(0, 2fr) minmax(180px, 0.8fr);
+  }
+
+  .project-media-layout--humanoid {
+    align-items: start;
+    grid-template-columns: repeat(2, 240px);
+    justify-content: center;
+  }
+}
+
+.project-media-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-media-wide {
+  align-self: start;
+}
+
+.project-portrait-media {
+  aspect-ratio: 9 / 16;
+  background: #000;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  max-height: 380px;
+  overflow: hidden;
+}
+
+.project-portrait-media video,
+.project-portrait-media img {
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.project-media-layout--humanoid .project-portrait-media {
+  aspect-ratio: 224 / 339;
+}
+
+.project-media-layout--humanoid .project-portrait-media--humanoid-video,
+.project-media-layout--humanoid .project-portrait-media--humanoid-image {
+  aspect-ratio: auto;
+  height: 363px;
+  width: 240px;
+}
+
+.project-media-layout--humanoid .project-portrait-media video {
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  width: 100%;
+}
+
+.project-media-layout--humanoid .project-portrait-media img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.project-vla-media {
+  display: grid;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 1.5rem auto;
+}
+
+.project-vla-video {
+  max-width: 560px;
+  width: 100%;
+  justify-self: center;
+}
+
+.project-vla-images {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 56em) {
+  .project-vla-images {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.project-vla-images img {
+  background: #fff;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+}
+
+.project-section-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+@media (min-width: 48em) {
+  .project-section-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.project-section-grid h3 {
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.project-result-row {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+}
+
+@media (min-width: 48em) {
+  .project-result-row {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+.project-result-row div {
+  border-left: 3px solid #2f6f73;
+  padding-left: 0.75rem;
+}
+
+.project-result-row strong {
+  display: block;
+  color: #24292f;
+  font-size: 1.05rem;
+}
+
+.project-result-row span {
+  color: #57606a;
+  display: block;
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
